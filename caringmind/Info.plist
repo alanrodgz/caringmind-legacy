@@ -2,8 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <!-- Bundle Information -->
     <key>CFBundleIdentifier</key>
-    <string>ebowwa.irlapp.CaringMindApp</string>
+    <string>alan.caringmind</string>
     <key>CFBundleName</key>
     <string>CaringMind</string>
     <key>CFBundleDisplayName</key>
@@ -12,13 +13,24 @@
     <string>1.0</string>
     <key>CFBundleShortVersionString</key>
     <string>1.0</string>
+    
+    <!-- Ensure iOS-only Support -->
     <key>LSRequiresIPhoneOS</key>
     <true/>
+    
+    <!-- Interface and Launch Settings -->
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
     <key>UISupportedInterfaceOrientations</key>
     <array>
         <string>UIInterfaceOrientationPortrait</string>
+        <!-- Include additional orientations if needed -->
     </array>
+
+    <!-- Apple Watch Support -->
+    <key>WKCompanionAppBundleIdentifier</key>
+    <string>alan.caringmind.watchapp</string> <!-- Update this identifier to match watch appbundle identifier -->
+    
+    <!-- Exclude macOS Support -->
 </dict>
 </plist>

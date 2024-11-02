@@ -1,6 +1,6 @@
 name: CaringMind
 options:
-  bundleIdPrefix: ebowwa.irlapp
+  bundleIdPrefix: alan.caringmind
   deploymentTarget:
     iOS: '14.0'
     watchOS: '7.0'
@@ -19,7 +19,7 @@ targets:
       - target: CaringMindWatchApp
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: ebowwa.irlapp.CaringMindApp
+        PRODUCT_BUNDLE_IDENTIFIER: alan.caringmind
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: 42R8ZPM5N8
         SWIFT_VERSION: 5.0

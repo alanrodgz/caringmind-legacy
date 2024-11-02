@@ -1,4 +1,0 @@
-module CaringMind {
-    header "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/CaringMind-Swift.h"
-    requires objc
-}
