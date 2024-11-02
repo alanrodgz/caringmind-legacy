@@ -1,1 +1,2 @@
-.build
+.build/
+/workspaces/caringmind2/.build/
