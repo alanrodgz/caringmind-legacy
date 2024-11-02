@@ -1,0 +1,53 @@
+name: CaringMind
+options:
+  bundleIdPrefix: ebowwa.irlapp
+  deploymentTarget:
+    iOS: '14.0'
+    watchOS: '7.0'
+configs:
+  Debug: debug
+  Release: release
+targets:
+  CaringMindApp:
+    type: application
+    platform: iOS
+    sources: [CaringMindApp]
+    resources: [CaringMindApp/Resources]
+    info: CaringMindApp/Info.plist
+    entitlements: CaringMindApp/CaringMindApp.entitlements
+    dependencies:
+      - target: CaringMindWatchApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ebowwa.irlapp.CaringMindApp
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 42R8ZPM5N8
+        SWIFT_VERSION: 5.0
+  CaringMindWatchApp:
+    type: application.watchapp2
+    platform: watchOS
+    sources: [CaringMindWatchApp]
+    resources: [CaringMindWatchApp/Resources]
+    info: CaringMindWatchApp/Info.plist
+    entitlements: CaringMindWatchApp/CaringMindWatchApp.entitlements
+    dependencies:
+      - target: CaringMindWatchAppExtension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ebowwa.irlapp.CaringMindWatchApp
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 42R8ZPM5N8
+        SWIFT_VERSION: 5.0
+  CaringMindWatchAppExtension:
+    type: extension.watchapp2
+    platform: watchOS
+    sources: [CaringMindWatchAppExtension]
+    resources: [CaringMindWatchAppExtension/Resources]
+    info: CaringMindWatchAppExtension/Info.plist
+    entitlements: CaringMindWatchAppExtension/CaringMindWatchAppExtension.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ebowwa.irlapp.CaringMindWatchAppExtension
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 42R8ZPM5N8
+        SWIFT_VERSION: 5.0

@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/master.swiftdeps"
+  },
+  "/Users/ebowwa/caringmind2/caringmindTests/caringmindTests.swift": {
+    "dependencies": "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/caringmindTests.d",
+    "object": "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/caringmindTests.swift.o",
+    "swiftmodule": "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/caringmindTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/caringmindTests.swiftdeps"
+  }
+}

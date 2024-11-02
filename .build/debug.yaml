@@ -1,0 +1,129 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "CaringMind-arm64-apple-macosx15.0-debug.module": ["<CaringMind-arm64-apple-macosx15.0-debug.module>"]
+  "CaringMindPackageTests-arm64-apple-macosx15.0-debug.module": ["<CaringMindPackageTests-arm64-apple-macosx15.0-debug.module>"]
+  "CaringMindPackageTests-arm64-apple-macosx15.0-debug.test": ["<CaringMindPackageTests-arm64-apple-macosx15.0-debug.test>"]
+  "CaringMindTests-arm64-apple-macosx15.0-debug.module": ["<CaringMindTests-arm64-apple-macosx15.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<CaringMind-arm64-apple-macosx15.0-debug.module>"]
+  "test": ["<CaringMind-arm64-apple-macosx15.0-debug.module>","<CaringMindPackageTests-arm64-apple-macosx15.0-debug.test>","<CaringMindTests-arm64-apple-macosx15.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/ebowwa/caringmind2/caringmind/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/ebowwa/caringmind2/caringmindTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ebowwa/caringmind2/caringmind/ContentView.swift","/Users/ebowwa/caringmind2/caringmind/caringmindApp.swift","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/DerivedSources/resource_bundle_accessor.swift"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/sources"]
+    description: "Write auxiliary file /Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/sources"
+
+  "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.derived/runner.swift"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/sources"
+
+  "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.derived/runner.swift"]
+
+  "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/ContentView.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/caringmindApp.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/resource_bundle_accessor.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/runner.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/caringmindTests.swift.o"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.product/Objects.LinkFileList"
+
+  "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ebowwa/caringmind2/caringmindTests/caringmindTests.swift"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/sources"]
+    description: "Write auxiliary file /Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/sources"
+
+  "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind_CaringMind.bundle/Assets.xcassets":
+    tool: copy-tool
+    inputs: ["/Users/ebowwa/caringmind2/caringmind/Assets.xcassets/"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind_CaringMind.bundle/Assets.xcassets/"]
+    description: "Copying /Users/ebowwa/caringmind2/caringmind/Assets.xcassets"
+
+  "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind_CaringMind.bundle/Preview Assets.xcassets":
+    tool: copy-tool
+    inputs: ["/Users/ebowwa/caringmind2/caringmind/Preview Content/Preview Assets.xcassets/"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind_CaringMind.bundle/Preview Assets.xcassets/"]
+    description: "Copying /Users/ebowwa/caringmind2/caringmind/Preview Content/Preview Assets.xcassets"
+
+  "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<CaringMind-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/ContentView.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/caringmindApp.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/resource_bundle_accessor.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMind.swiftmodule"]
+    outputs: ["<CaringMind-arm64-apple-macosx15.0-debug.module>"]
+
+  "<CaringMindPackageTests-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/runner.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMindPackageTests.swiftmodule"]
+    outputs: ["<CaringMindPackageTests-arm64-apple-macosx15.0-debug.module>"]
+
+  "<CaringMindPackageTests-arm64-apple-macosx15.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.xctest/Contents/MacOS/CaringMindPackageTests"]
+    outputs: ["<CaringMindPackageTests-arm64-apple-macosx15.0-debug.test>"]
+
+  "<CaringMindTests-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/caringmindTests.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMindTests.swiftmodule"]
+    outputs: ["<CaringMindTests-arm64-apple-macosx15.0-debug.module>"]
+
+  "C.CaringMind-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/ebowwa/caringmind2/caringmind/ContentView.swift","/Users/ebowwa/caringmind2/caringmind/caringmindApp.swift","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/DerivedSources/resource_bundle_accessor.swift","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","<CaringMind-arm64-apple-macosx15.0-debug.module-resources>","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/sources"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/ContentView.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/caringmindApp.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/resource_bundle_accessor.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMind.swiftmodule"]
+    description: "Compiling Swift Module 'CaringMind' (3 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CaringMind","-emit-dependencies","-emit-module","-emit-module-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMind.swiftmodule","-output-file-map","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/sources","-I","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-enable-batch-mode","-index-store-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/CaringMind-Swift.h","-color-diagnostics","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g"]
+
+  "C.CaringMindPackageTests-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.derived/runner.swift","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMindTests.swiftmodule","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/sources"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/runner.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMindPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'CaringMindPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CaringMindPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMindPackageTests.swiftmodule","-output-file-map","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/sources","-I","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-enable-batch-mode","-index-store-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/CaringMindPackageTests-Swift.h","-color-diagnostics","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g"]
+
+  "C.CaringMindPackageTests-arm64-apple-macosx15.0-debug.test":
+    tool: shell
+    inputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/ContentView.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/caringmindApp.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind.build/resource_bundle_accessor.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/runner.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/caringmindTests.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.xctest/Contents/MacOS/CaringMindPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/CaringMindPackageTests.xctest/Contents/MacOS/CaringMindPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug","-o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.xctest/Contents/MacOS/CaringMindPackageTests","-module-name","CaringMindPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMind.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMindPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMindTests.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.CaringMindTests-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/ebowwa/caringmind2/caringmindTests/caringmindTests.swift","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMind.swiftmodule","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/sources"]
+    outputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/caringmindTests.swift.o","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMindTests.swiftmodule"]
+    description: "Compiling Swift Module 'CaringMindTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","CaringMindTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules/CaringMindTests.swiftmodule","-output-file-map","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindTests.build/sources","-I","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-enable-batch-mode","-index-store-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g"]
+
+  "CaringMind-arm64-apple-macosx15.0-debug.module-resources":
+    tool: phony
+    inputs: ["/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind_CaringMind.bundle/Assets.xcassets/","/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMind_CaringMind.bundle/Preview Assets.xcassets/"]
+    outputs: ["<CaringMind-arm64-apple-macosx15.0-debug.module-resources>"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/ebowwa/caringmind2/caringmind/","/Users/ebowwa/caringmind2/caringmindTests/","/Users/ebowwa/caringmind2/Package.swift","/Users/ebowwa/caringmind2/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
