@@ -1,4 +1,0 @@
-module CaringMindPackageTests {
-    header "/Users/ebowwa/caringmind2/.build/arm64-apple-macosx/debug/CaringMindPackageTests.build/CaringMindPackageTests-Swift.h"
-    requires objc
-}

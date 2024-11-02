@@ -1,4 +1,2 @@
-.build
-/.build
-.build/arm64-apple-macosx
-/workspaces/caringmind2/.build
+.build/
+/workspaces/caringmind2/.build/
