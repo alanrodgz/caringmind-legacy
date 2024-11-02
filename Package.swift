@@ -14,12 +14,15 @@ let package = Package(
         ),
     ],
     dependencies: [
-        // Add any dependencies here, e.g., .package(url: "https://github.com/Dependency/Repo", from: "1.0.0"),
+        // Add the GoogleSignIn package as a dependency
+        .package(url: "https://github.com/google/GoogleSignIn-iOS.git", from: "6.0.0"), // or latest version
     ],
     targets: [
         .target(
             name: "CaringMind",
-            dependencies: [],
+            dependencies: [
+                .product(name: "GoogleSignIn", package: "GoogleSignIn-iOS") // Add GoogleSignIn as a target dependency
+            ],
             path: "caringmind",
             resources: [
                 .process("Preview Content/Preview Assets.xcassets"),

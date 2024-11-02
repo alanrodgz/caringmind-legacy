@@ -116,3 +116,5 @@ Look for any error messages that provide details on why the installation might b
 swift build
 
 swift package clean
+
+swift package update
