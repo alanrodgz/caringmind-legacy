@@ -1,0 +1,6 @@
+framework module Pods_caringmind_caringmindUITests {
+  umbrella header "Pods-caringmind-caringmindUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

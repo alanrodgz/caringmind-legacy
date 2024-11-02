@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04288437924DBA04C768BFFF43973B3C /* Pods-caringmind-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 648B2BAF07AD87433305567C13A78A59 /* Pods-caringmind-dummy.m */; };
+		2D9A3198F1F6EDB211FB340E891126E2 /* Pods-caringmind-caringmindUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB57F069D65A096205DC75C49469CE04 /* Pods-caringmind-caringmindUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B0E5F9086A396F115CF27B120DAB129 /* Pods-caringmindTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B66A62B167B48D832C13187B28E68F2 /* Pods-caringmindTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73E0AC3365B0348607EA42C23971A397 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		76008E26C82AB345783960AE6BB17806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		881614F9E2613BFDD80B9EAFC7F64132 /* Pods-caringmind-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5D0E116868A9C9729E322D50E646FF /* Pods-caringmind-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBA4CAF912340B05EA75287C49C34D73 /* Pods-caringmindTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04596ED576E836A593E40076E5981D11 /* Pods-caringmindTests-dummy.m */; };
+		F1AC4A7EFB9FBFBA5EE6DEF31A0EB690 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		F24B3A9EC2E0D3CC856961F09967BEB4 /* Pods-caringmind-caringmindUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84A4D8731BBCF82ABAA98AD91DD524 /* Pods-caringmind-caringmindUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3AEFABA04F13C177353008BDCA85ECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41ECE73BAE13950ED0A1A300D79811D4;
+			remoteInfo = "Pods-caringmind";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04596ED576E836A593E40076E5981D11 /* Pods-caringmindTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-caringmindTests-dummy.m"; sourceTree = "<group>"; };
+		04BEBD7B4EF75A89D18D44818BEE85DA /* Pods-caringmind.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-caringmind.modulemap"; sourceTree = "<group>"; };
+		07952D0A73503B35C6EB8D8A1D3E296D /* Pods-caringmind-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-caringmind-Info.plist"; sourceTree = "<group>"; };
+		1B66A62B167B48D832C13187B28E68F2 /* Pods-caringmindTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-caringmindTests-umbrella.h"; sourceTree = "<group>"; };
+		2419277E74DA9CCE57D8010A740E14F7 /* Pods-caringmind-caringmindUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-caringmind-caringmindUITests.modulemap"; sourceTree = "<group>"; };
+		3356045F7B687FDD2D708D09194DEB9F /* Pods-caringmind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-caringmind.debug.xcconfig"; sourceTree = "<group>"; };
+		3620DB18CC1ACFE94C55C84126B0B3CB /* Pods-caringmind-caringmindUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-caringmind-caringmindUITests"; path = Pods_caringmind_caringmindUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3C5D0E116868A9C9729E322D50E646FF /* Pods-caringmind-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-caringmind-umbrella.h"; sourceTree = "<group>"; };
+		445A86BDAADFABC7B86D784096AEC14F /* Pods-caringmind-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-caringmind-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4CD2F79D37BCC78F398FAA3806BB04A8 /* Pods-caringmind-caringmindUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-caringmind-caringmindUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		54E78A9098BAEDFAF77D0F39C193866E /* Pods-caringmind-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-caringmind-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E325F33335B0F9EC302396B2F044B0C /* Pods-caringmind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-caringmind.release.xcconfig"; sourceTree = "<group>"; };
+		61BA89656977B82870364B00DF78055F /* Pods-caringmind */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-caringmind"; path = Pods_caringmind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		648B2BAF07AD87433305567C13A78A59 /* Pods-caringmind-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-caringmind-dummy.m"; sourceTree = "<group>"; };
+		69122EAB1D35C23BC44CC64B649544F1 /* Pods-caringmind-caringmindUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-caringmind-caringmindUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6BD01CB505E3898F3AF0AF465E73640E /* Pods-caringmind-caringmindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-caringmind-caringmindUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F40BE0DF37B06680D6ECE82737DD342 /* Pods-caringmindTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-caringmindTests-Info.plist"; sourceTree = "<group>"; };
+		AE0D231656D6A38FBE42B4CF267A2978 /* Pods-caringmindTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-caringmindTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B43D8A476D5889FA6C233B66DA1FBFA1 /* Pods-caringmind-caringmindUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-caringmind-caringmindUITests-Info.plist"; sourceTree = "<group>"; };
+		BB84A4D8731BBCF82ABAA98AD91DD524 /* Pods-caringmind-caringmindUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-caringmind-caringmindUITests-dummy.m"; sourceTree = "<group>"; };
+		BFF1D705E64D356940946FE77D89AB6B /* Pods-caringmindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-caringmindTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0637197470DEEA318C16A657753381D /* Pods-caringmindTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-caringmindTests.modulemap"; sourceTree = "<group>"; };
+		D09325280A360F99B73E98312A813CE1 /* Pods-caringmindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-caringmindTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9EE0C2103BC94C42DE8B2BF4B101323 /* Pods-caringmind-caringmindUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-caringmind-caringmindUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E1A1B09B1DED2164386BE27370B561B6 /* Pods-caringmindTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-caringmindTests"; path = Pods_caringmindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB57F069D65A096205DC75C49469CE04 /* Pods-caringmind-caringmindUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-caringmind-caringmindUITests-umbrella.h"; sourceTree = "<group>"; };
+		F2A122210F887DA8D04A429E0AEFD10B /* Pods-caringmindTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-caringmindTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FDF1229B8EAC27013BB4FBA368EFC4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73E0AC3365B0348607EA42C23971A397 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD945FF2FCD74F592DFCF10CE4B7829A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76008E26C82AB345783960AE6BB17806 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46D3F990BA3A114BCAA90FB0BCF769E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1AC4A7EFB9FBFBA5EE6DEF31A0EB690 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BE1802650CFF6BCD668ACFAAB7F4B26 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D31AE48AD05594ACCB71B42F88F5D14B /* Pods-caringmind */,
+				F1C32BC4BEBCBC466650E4B5E72A76E2 /* Pods-caringmind-caringmindUITests */,
+				425C57D0D84DD3FA3D1B50C5215A52E2 /* Pods-caringmindTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		425C57D0D84DD3FA3D1B50C5215A52E2 /* Pods-caringmindTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0637197470DEEA318C16A657753381D /* Pods-caringmindTests.modulemap */,
+				F2A122210F887DA8D04A429E0AEFD10B /* Pods-caringmindTests-acknowledgements.markdown */,
+				AE0D231656D6A38FBE42B4CF267A2978 /* Pods-caringmindTests-acknowledgements.plist */,
+				04596ED576E836A593E40076E5981D11 /* Pods-caringmindTests-dummy.m */,
+				9F40BE0DF37B06680D6ECE82737DD342 /* Pods-caringmindTests-Info.plist */,
+				1B66A62B167B48D832C13187B28E68F2 /* Pods-caringmindTests-umbrella.h */,
+				BFF1D705E64D356940946FE77D89AB6B /* Pods-caringmindTests.debug.xcconfig */,
+				D09325280A360F99B73E98312A813CE1 /* Pods-caringmindTests.release.xcconfig */,
+			);
+			name = "Pods-caringmindTests";
+			path = "Target Support Files/Pods-caringmindTests";
+			sourceTree = "<group>";
+		};
+		6181538BDE4071BA64B2E2723DEF8EF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61BA89656977B82870364B00DF78055F /* Pods-caringmind */,
+				3620DB18CC1ACFE94C55C84126B0B3CB /* Pods-caringmind-caringmindUITests */,
+				E1A1B09B1DED2164386BE27370B561B6 /* Pods-caringmindTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6181538BDE4071BA64B2E2723DEF8EF7 /* Products */,
+				2BE1802650CFF6BCD668ACFAAB7F4B26 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D31AE48AD05594ACCB71B42F88F5D14B /* Pods-caringmind */ = {
+			isa = PBXGroup;
+			children = (
+				04BEBD7B4EF75A89D18D44818BEE85DA /* Pods-caringmind.modulemap */,
+				445A86BDAADFABC7B86D784096AEC14F /* Pods-caringmind-acknowledgements.markdown */,
+				54E78A9098BAEDFAF77D0F39C193866E /* Pods-caringmind-acknowledgements.plist */,
+				648B2BAF07AD87433305567C13A78A59 /* Pods-caringmind-dummy.m */,
+				07952D0A73503B35C6EB8D8A1D3E296D /* Pods-caringmind-Info.plist */,
+				3C5D0E116868A9C9729E322D50E646FF /* Pods-caringmind-umbrella.h */,
+				3356045F7B687FDD2D708D09194DEB9F /* Pods-caringmind.debug.xcconfig */,
+				5E325F33335B0F9EC302396B2F044B0C /* Pods-caringmind.release.xcconfig */,
+			);
+			name = "Pods-caringmind";
+			path = "Target Support Files/Pods-caringmind";
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F1C32BC4BEBCBC466650E4B5E72A76E2 /* Pods-caringmind-caringmindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2419277E74DA9CCE57D8010A740E14F7 /* Pods-caringmind-caringmindUITests.modulemap */,
+				4CD2F79D37BCC78F398FAA3806BB04A8 /* Pods-caringmind-caringmindUITests-acknowledgements.markdown */,
+				D9EE0C2103BC94C42DE8B2BF4B101323 /* Pods-caringmind-caringmindUITests-acknowledgements.plist */,
+				BB84A4D8731BBCF82ABAA98AD91DD524 /* Pods-caringmind-caringmindUITests-dummy.m */,
+				B43D8A476D5889FA6C233B66DA1FBFA1 /* Pods-caringmind-caringmindUITests-Info.plist */,
+				EB57F069D65A096205DC75C49469CE04 /* Pods-caringmind-caringmindUITests-umbrella.h */,
+				6BD01CB505E3898F3AF0AF465E73640E /* Pods-caringmind-caringmindUITests.debug.xcconfig */,
+				69122EAB1D35C23BC44CC64B649544F1 /* Pods-caringmind-caringmindUITests.release.xcconfig */,
+			);
+			name = "Pods-caringmind-caringmindUITests";
+			path = "Target Support Files/Pods-caringmind-caringmindUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C0551EEBA8C022D031CDA1A23003D6A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881614F9E2613BFDD80B9EAFC7F64132 /* Pods-caringmind-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A32F5C830D5F3555728C3DB3E560DC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0E5F9086A396F115CF27B120DAB129 /* Pods-caringmindTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE024F69B91515F8B527728F205160E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9A3198F1F6EDB211FB340E891126E2 /* Pods-caringmind-caringmindUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		289CF6C5AEA6D67405113CAFE524E617 /* Pods-caringmind-caringmindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C85C7F7CD0A62D151056718F631BE80C /* Build configuration list for PBXNativeTarget "Pods-caringmind-caringmindUITests" */;
+			buildPhases = (
+				FE024F69B91515F8B527728F205160E3 /* Headers */,
+				D5FD1E314BE573A23BEB6F11D60F43C0 /* Sources */,
+				CD945FF2FCD74F592DFCF10CE4B7829A /* Frameworks */,
+				5CCBEF1FEF790A5A0F894176DF4AD5B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-caringmind-caringmindUITests";
+			productName = Pods_caringmind_caringmindUITests;
+			productReference = 3620DB18CC1ACFE94C55C84126B0B3CB /* Pods-caringmind-caringmindUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		41ECE73BAE13950ED0A1A300D79811D4 /* Pods-caringmind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 615649D98FB790D563B7C95376D94F77 /* Build configuration list for PBXNativeTarget "Pods-caringmind" */;
+			buildPhases = (
+				2C0551EEBA8C022D031CDA1A23003D6A /* Headers */,
+				3A7FD7B3A4E08CADC7289C726908184F /* Sources */,
+				9FDF1229B8EAC27013BB4FBA368EFC4C /* Frameworks */,
+				09561E48F48E10CA7C69E1886D91D533 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-caringmind";
+			productName = Pods_caringmind;
+			productReference = 61BA89656977B82870364B00DF78055F /* Pods-caringmind */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FFE03B2EB066EF69312E8CBCDE5B423 /* Pods-caringmindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1780D1CFFFDC5F81C07E43A0B6DF32B /* Build configuration list for PBXNativeTarget "Pods-caringmindTests" */;
+			buildPhases = (
+				7A32F5C830D5F3555728C3DB3E560DC8 /* Headers */,
+				1B131B04AF1BE1B5B08915DABB1CE135 /* Sources */,
+				D46D3F990BA3A114BCAA90FB0BCF769E /* Frameworks */,
+				2AB1E07F3FA3083ED37BA8D0013C9FC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAFD9F042B7CF7932D11C7F2B96D891F /* PBXTargetDependency */,
+			);
+			name = "Pods-caringmindTests";
+			productName = Pods_caringmindTests;
+			productReference = E1A1B09B1DED2164386BE27370B561B6 /* Pods-caringmindTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6181538BDE4071BA64B2E2723DEF8EF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41ECE73BAE13950ED0A1A300D79811D4 /* Pods-caringmind */,
+				289CF6C5AEA6D67405113CAFE524E617 /* Pods-caringmind-caringmindUITests */,
+				6FFE03B2EB066EF69312E8CBCDE5B423 /* Pods-caringmindTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09561E48F48E10CA7C69E1886D91D533 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB1E07F3FA3083ED37BA8D0013C9FC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CCBEF1FEF790A5A0F894176DF4AD5B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B131B04AF1BE1B5B08915DABB1CE135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA4CAF912340B05EA75287C49C34D73 /* Pods-caringmindTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7FD7B3A4E08CADC7289C726908184F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04288437924DBA04C768BFFF43973B3C /* Pods-caringmind-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FD1E314BE573A23BEB6F11D60F43C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24B3A9EC2E0D3CC856961F09967BEB4 /* Pods-caringmind-caringmindUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAFD9F042B7CF7932D11C7F2B96D891F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-caringmind";
+			target = 41ECE73BAE13950ED0A1A300D79811D4 /* Pods-caringmind */;
+			targetProxy = D3AEFABA04F13C177353008BDCA85ECC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		58BBAAA057CD165B08017E040E580399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		68087FE5413943111A5EA5C15CB45CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7CC90847A46A999EBCDFED6132245C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD01CB505E3898F3AF0AF465E73640E /* Pods-caringmind-caringmindUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-caringmind-caringmindUITests/Pods-caringmind-caringmindUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-caringmind-caringmindUITests/Pods-caringmind-caringmindUITests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C32FF8428F9DA727B2DE10C59C25B4E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF1D705E64D356940946FE77D89AB6B /* Pods-caringmindTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-caringmindTests/Pods-caringmindTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-caringmindTests/Pods-caringmindTests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB91DE8699781FCD8072BC4C6DF887CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D09325280A360F99B73E98312A813CE1 /* Pods-caringmindTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-caringmindTests/Pods-caringmindTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-caringmindTests/Pods-caringmindTests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD1DE0926B144662EAC34FA205F63071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3356045F7B687FDD2D708D09194DEB9F /* Pods-caringmind.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-caringmind/Pods-caringmind-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-caringmind/Pods-caringmind.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E32B5A7ABF9781ED496F23DB1DC2AFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69122EAB1D35C23BC44CC64B649544F1 /* Pods-caringmind-caringmindUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-caringmind-caringmindUITests/Pods-caringmind-caringmindUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-caringmind-caringmindUITests/Pods-caringmind-caringmindUITests.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF4409866BA178822A41F36EFB09F532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E325F33335B0F9EC302396B2F044B0C /* Pods-caringmind.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-caringmind/Pods-caringmind-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-caringmind/Pods-caringmind.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BBAAA057CD165B08017E040E580399 /* Debug */,
+				68087FE5413943111A5EA5C15CB45CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		615649D98FB790D563B7C95376D94F77 /* Build configuration list for PBXNativeTarget "Pods-caringmind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1DE0926B144662EAC34FA205F63071 /* Debug */,
+				EF4409866BA178822A41F36EFB09F532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C85C7F7CD0A62D151056718F631BE80C /* Build configuration list for PBXNativeTarget "Pods-caringmind-caringmindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC90847A46A999EBCDFED6132245C5B /* Debug */,
+				E32B5A7ABF9781ED496F23DB1DC2AFAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1780D1CFFFDC5F81C07E43A0B6DF32B /* Build configuration list for PBXNativeTarget "Pods-caringmindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32FF8428F9DA727B2DE10C59C25B4E1 /* Debug */,
+				DB91DE8699781FCD8072BC4C6DF887CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
